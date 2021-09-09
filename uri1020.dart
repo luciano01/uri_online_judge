@@ -18,6 +18,7 @@ void main() {
   var months = days / 30;
   days = days % 30;
 
-  print(
-      '${years.toInt()} Ano(s), ${months.toInt()} Mes(es), ${days.toInt()} Dia(s)');
+  print('${years.toInt()} Ano(s)');
+  print('${months.toInt()} Mes(es)');
+  print('${days.toInt()} Dia(s)');
 }
