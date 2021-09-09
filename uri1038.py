@@ -19,7 +19,11 @@ torradaSimples = 2.00
 refrigerante = 1.50
 
 itemCode = int(input('Item Code: '))
-amount = int(input('Amount: '))
+
+if(itemCode <= 0 or itemCode > 5):
+    amount = 0
+else:
+    amount = int(input('Amount: '))
 price = 0
 
 if(itemCode == 1):
@@ -35,7 +39,9 @@ elif(itemCode == 5):
 elif(itemCode <= 0 or itemCode > 5):
     price = 0
 
-
+print('')
+print('----- DETAILS -----')
 print('Item Code:', itemCode)
 print('Amount:', amount)
 print('Price:', price)
+print('---------------------')
